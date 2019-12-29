@@ -23,7 +23,8 @@ client.on('message', function (message) {
         if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("**mymknch lk al9lawi**")
         let member = message.mentions.members.first()
         if (!member) return message.channel.send("**Mt3ssbnich al9lawi montionner**")
-        if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.ownerID) return message.channel.send("**Mymknch lk al9lawi** :( ")
+        if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.
+!== message.guild.ownerID) return message.channel.send("**Mymknch lk al9lawi** :( ")
         if (!member.manageable) return message.channel.send("**Mymknch tmuter had i**")
         let muterole = message.guild.roles.find(role => role.name === 'Muted')
         if (muterole) {
@@ -269,7 +270,7 @@ client.on("message", (message) => {
   }
   if (message.content.startsWith("al!invite")) {
     console.log("invite from " + message.author)
-    message.channel.sendMessage("discordapp.com/oauth2/authorize?client_id=395881404027633665&scope=bot&permissions=58368")
+    message.channel.sendMessage("discordapp.com/oauth2/authorize?client_id=658244774804848645&scope=bot&permissions=58368")
   }
   if (message.content.startsWith("al!ping")) {
     console.log("ping from " + message.author)
